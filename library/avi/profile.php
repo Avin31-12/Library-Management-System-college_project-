@@ -1,0 +1,141 @@
+<?php
+include "connection.php";
+include "navbar.php";
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        .wrapper{
+           width:300px;
+           margin:0px auto;
+           /* background-color:blue; */
+           color:white
+        }
+    </style>
+</head>
+<body style="background-color:#004528;">
+     <div class="container">
+        <form action="" method="post">
+            <button class="btn btn-default" style="float:right; width: 106px;height:36px;" name="submit"> Edit
+            </button>
+        </form>
+        <div class="wrapper">
+            <?php
+             if(isset($_POST['submit']))
+             {             
+              ?>
+                <script type="text/javascript">
+                   window.location="editprofile.php"
+                </script>    
+               <?php  
+             }
+             $q=mysqli_query($db,"SELECT *FROM `student` WHERE username='$_SESSION[login_user]' ;");
+              ?>
+                 <h2 style="text-align:center;">My Profile</h2>
+              <?php
+             $row= mysqli_fetch_assoc($q);
+             echo "<div  style='text-align:center;'>
+             <img  class='img-circle profile-img' height=100 width=100 src='image/".$_SESSION['pic']."'>
+             </div>";
+             ?>
+             <div style='text-align:center; font-size:23px;'><B>Welcome<B>
+                    <h4>
+                       <?php  echo $_SESSION['login_user'];?>
+                     </h4>
+               </div>
+               <?php
+               echo "<b>";
+               echo "<table class='table table-bordered table-hover'>";
+               echo "<tr>";
+               echo "<td>";
+                  echo "<b> first Name: </b>";
+               echo "</td>";
+               
+               echo "<td>";
+                 echo $row['first'];
+               echo "</td>";
+               echo "</tr>";
+
+               echo "<tr>";
+               
+               echo "<td>";
+                  echo "<b> Last Name: </b>";
+               echo "</td>";
+               
+               echo "<td>";
+                          echo $row['last'];
+               echo "</td>";
+               echo "</tr>";
+
+               echo "<tr>";
+               
+               echo "<td>";
+               echo "<b>  User Name: </b>";
+
+               echo "</td>";
+               
+               echo "<td>";
+                          echo $row['username'];
+               echo "</td>";
+               echo "</tr>";
+              
+               echo "<tr>";
+               
+               echo "<td>";
+               echo "<b> Password: </b>";
+
+               echo "</td>";
+               
+               echo "<td>";
+                   echo $row['Password'];
+               echo "</td>";
+               echo "</tr>";
+              
+               echo "<tr>";
+               
+               echo "<td>";
+                  echo "<b> Rollno: </b>";
+                       
+               echo "</td>";
+               
+               echo "<td>";
+               echo $row['roll'];
+
+               echo "</td>";
+               echo "</tr>";
+              
+               echo "<tr>";
+               
+               echo "<td>";
+               echo "<b> Email Id: </b>";
+               echo "</td>";
+               
+               echo "<td>";
+               echo $row['email'];
+               
+               echo "</td>";
+               echo "</tr>";
+               
+               echo "<tr>";
+               echo "<td>";
+               echo "<b> Contact: </b>";
+               echo "</td>";
+               echo "<td>";
+               echo $row['Contact'];
+               echo "</td>";
+               echo "</tr>";
+              
+               echo "</table>";
+               echo "<b>";
+               ?>
+               
+            </div>
+         </div>
+</body>
+</html>

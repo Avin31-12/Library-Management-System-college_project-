@@ -1,0 +1,84 @@
+echo "<b>";
+               echo "<table class='table table-bordered'>";
+             echo "<tr>";
+               echo "<td>";
+                  echo "<b> 
+               first Name: </b>";
+               echo "</td>";
+               
+             echo "<td>";
+               echo $row['first'];
+               echo "</td>";
+             echo "</tr>";
+
+               echo "<tr>";     
+               echo "<td>";
+                  echo "<b> Last Name: </b>";
+               echo "</td>";
+               
+               echo "<td>";
+             echo $row['last'];
+               echo "</td>";
+               echo "</tr>";
+
+               echo "<tr>";
+               
+               echo "<td>";
+               echo "<b>  User Name: </b>";
+
+               echo "</td>";
+               
+               echo "<td>";
+              echo $row['username'];
+               echo "</td>";
+               echo "</tr>";
+              
+               echo "<tr>";
+               
+               echo "<td>";
+               echo "<b> Password: </b>";
+
+               echo "</td>";
+               
+               echo "<td>";
+               echo $row['password'];
+               echo "</td>";
+               echo "</tr>";
+              
+               // echo "<tr>";
+               
+               // echo "<td>";
+               //    echo "<b> Rollno: </b>";
+                       
+               // echo "</td>";
+               
+               // echo "<td>";
+               // echo $row['roll'];
+
+               // echo "</td>";
+               // echo "</tr>";
+              
+               echo "<tr>";
+               
+               echo "<td>";
+               echo "<b> Email Id: </b>";
+               echo "</td>";
+               
+               echo "<td>";
+               echo $row['email'];
+               
+               echo "</td>";
+               echo "</tr>";
+               
+               echo "<tr>";
+               echo "<td>";
+               echo "<b> Contact: </b>";
+               echo "</td>";
+               echo "<td>";
+               echo $row['Contact'];
+               echo "</td>";
+               echo "</tr>";
+              
+               echo "</table>";
+               echo "<b>";
+               

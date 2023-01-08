@@ -1,0 +1,196 @@
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+input,select{
+    vertical-align: middle;
+}
+.wrapper{
+    height:661px;
+    width: 100%;
+}
+header{
+    height: 150px;
+    background-color: black;
+    width: 100%;
+    margin-top: -22px;
+}
+section{
+    height:449px;
+    width:100%;
+    background-color: grey;
+    background: url(image/3.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+footer{
+    height:92px;
+    width:100%;
+    background-color: black;
+  
+}
+.logo{
+    float: left;
+    padding-left: 20px;
+    
+}
+.logo img{
+    height: 120px;
+    width: 200px;
+    padding-left: 71px;
+}
+.logo h1{
+    color: white;
+    font-size:20px;
+}  
+li a{
+    color: white;
+    text-decoration: none;
+
+}
+/* nav{
+    float: right;
+    word-spacing: 30px;
+    padding: 20px;
+}
+nav li{
+    display:inline-block;
+    margin-top: 39px;
+    font-size: 1.0rem;
+} */
+.item{
+    height: 300px;
+    width: 450px;
+    background-color:rgb(22 17 17 / 74%);
+    margin:   70px auto;
+    opacity: 0.7rem;
+    color: white;
+}
+
+.item h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 23px;
+}
+.item h2{
+    text-align: center;
+    font-size: 1.6rem;
+}
+footer p{
+    text-align: center;
+    color: white;
+}
+section .box{
+    height: 550px;
+    margin-top: 0px;
+}
+
+.loginimg{
+    height: 622px;
+    margin-top: -20px;
+    background: url('image/th\ \(5\).webp');
+background-repeat: no-repeat;
+background-size: cover;
+color:white;
+padding: 20px;
+}
+.logo h4{
+    margin-top: 60px;
+    color: white;
+    font-size: 1.1rem;
+}
+.avi{
+    text-align: center;
+    font-size: 23px;
+    margin: 10px;
+    color: white;
+}
+.avin{
+    height:400px;
+    width: 445px;
+    background-color:rgb(22 17 17 / 74%);
+    margin:70px auto;
+    opacity: 0.7rem;
+    margin-top: 3px;
+    color:white;
+    padding: 20px;
+    border-radius: 7px;   
+}
+
+input{
+    color:black;
+    height: 34px;
+    width: 200px;
+}
+form .avin1{
+    margin: auto 110px ;
+    border-radius: 2px solid black;
+    text-align: center;
+}
+.loginimg p a{
+    color: white;
+    margin: 45px;
+    margin-top: 2px;
+
+}
+.loginimg p{
+    color: white;
+}
+/*..........................registration.............*\
+/* .regimg */ 
+
+
+
+.regimg{
+    height: 673px;
+    margin-top: -20px;
+    background: url('image/th\ \(3\).webp');
+background-repeat: no-repeat;
+background-size: cover;
+padding: 66px;
+}
+.avin3{
+    height:487px;
+    width: 445px;
+    background-color:rgb(22 17 17 / 74%);
+    margin:   0px auto;
+    opacity: 0.7rem;   
+    color:white;
+    padding: 20px;
+    border-radius: 7px;
+}
+ .avin3 .rest{
+    font-size: 1rem;
+    border-radius: 4px solid black;
+}
+
+form .avin2{
+    margin: auto 110px ;
+    border-radius: 2px solid black;
+    text-align: center;
+}
+form input{
+    border-radius: 7px;
+    color:black;
+}
+
+.avin2 input{
+    margin: 4px auto;
+}
+.avinash{
+  margin-top: 13px;
+}
+.srch{
+    padding-left: 1000px;
+}
+.vani{
+    background-color:#4d426a;
+    width: 203px;
+    border-radius: 7px;
+     height: 35px;
+}
